@@ -26,6 +26,9 @@ BOT_AVATAR_SVG = """
 </svg>
 """
 
+# Default advisor preference, also used when the student has not spoken or typed one
+DEFAULT_ADVISOR_PREFERENCE = "I prefer AI‑focused courses and want to avoid heavy coding coursework."
+
 # Initialize session state
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
@@ -33,16 +36,50 @@ if "current_mode" not in st.session_state:
     # Two modes: "course_lookup" (basic feature), "advisor" (additional feature)
     st.session_state.current_mode = "course_lookup"
 
-# ===================== Backend Connection =====================
-# All backend glue (imports, wiring, guards, fallbacks) lives in backend_bridge.py:
-#   Backend A  rag_backend.py                                  -> rag_course_query()        (basic feature)
-#   Backend B  advisor.py + rule_engine.py + courses.json      -> academic_advisor_recommend() (additional)
-# The UI below only calls these two functions, never the backend modules directly.
-from backend_bridge import (
-    academic_advisor_recommend,
-    backend_status,
-    rag_course_query,
-)
+# ===================== Real Backend Interface =====================
+# ---------------- Backend A (RAG pipeline, implement by member A) ----------------
+from rag_backend import rag_course_query as _raw_rag_course_query
+
+def rag_course_query(user_query: str) -> dict:
+    """
+    Basic Feature: Course syllabus lookup via RAG
+    Input: user natural language query e.g. "Tell me about COMP4431"
+    Return dict:
+    {
+        "answer": str,
+        "source_files": list[str]
+    }
+    """
+    res = _raw_rag_course_query(user_query.strip())
+    if not res["answer"]:
+        return {
+            "answer": "No matching course syllabus found in knowledge base.",
+            "source_files": []
+        }
+    return res
+
+
+# ---------------- Backend B (Rule Engine + Advisor Module, member B) ----------------
+# Real implementation lives in advisor.py (+ rule_engine.py + courses.json): keep them in the same folder.
+from advisor import academic_advisor_recommend as _advisor
+
+USE_RAG_SNIPPETS = False  # set True once member A's real rag_course_query() is connected
+
+def academic_advisor_recommend(
+    finished_courses: list[str],
+    remaining_credit: int,
+    preference_text: str,
+    semester=None
+) -> dict:
+    """
+    Additional Feature: Academic Advisor hybrid pipeline
+    Rule Engine (prerequisite / semester / credit / preference) -> optional RAG -> LLM wording
+    (falls back to a template answer if the local LLM is unavailable or breaks the rules)
+    Return dict: {"answer": str, "source_files": list[str]}
+    """
+    return _advisor(finished_courses, remaining_credit, preference_text,
+                    semester=semester,
+                    rag_fn=rag_course_query if USE_RAG_SNIPPETS else None)
 
 
 def render_speech_output(text: str, instance_id: str) -> None:
@@ -85,11 +122,15 @@ col_mode1, col_mode2 = st.columns([1,1])
 with col_mode1:
     if st.button("📖 Course Lookup (Basic Feature)", use_container_width=True,
                  type="primary" if st.session_state.current_mode == "course_lookup" else "secondary"):
+        if st.session_state.current_mode != "course_lookup":
+            st.session_state.chat_history = []  # do not mix the two features' conversations
         st.session_state.current_mode = "course_lookup"
         st.rerun()
 with col_mode2:
     if st.button("🧑‍🏫 Academic Advisor (Additional Feature)", use_container_width=True,
                  type="primary" if st.session_state.current_mode == "advisor" else "secondary"):
+        if st.session_state.current_mode != "advisor":
+            st.session_state.chat_history = []
         st.session_state.current_mode = "advisor"
         st.rerun()
 
@@ -132,20 +173,17 @@ if st.session_state.current_mode == "course_lookup":
         st.session_state.chat_history.append({"role":"user", "content":user_input})
         with st.chat_message("user"):
             st.markdown(user_input)
-        # Call backend A (RAG) through the connection layer
-        with st.spinner("Searching the course knowledge base…"):
+        # Call backend RAG (the first call may load the embedding model: keep the UI alive)
+        with st.spinner("Searching the syllabus knowledge base…"):
             result = rag_course_query(user_input)
         bot_ans = result["answer"]
         src_list = result["source_files"]
-        engine = result.get("engine", "")
         st.session_state.chat_history.append({"role":"assistant", "content":bot_ans, "sources":src_list})
         with st.chat_message("assistant", avatar=BOT_AVATAR_SVG):
             render_speech_output(bot_ans, "latest-course-answer")
             st.markdown(bot_ans)
             if src_list:
                 st.caption(f"📎 Source reference: {', '.join(src_list)}")
-            if engine == "courses.json":
-                st.caption("⚙️ No syllabus PDF matched — this answer comes from courses.json.")
 
 else:
     # Academic Advisor Mode input panel
@@ -157,11 +195,13 @@ else:
         just_once=True,
         key="advisor_stt",
     )
-    advisor_default_preference = (
-        advisor_voice_input
-        if advisor_voice_input
-        else "I prefer AI‑focused courses and want to avoid heavy coding coursework."
-    )
+    # A voice transcript arrives after the text area already exists, so a `value=` default
+    # would be ignored. Seed the widget's session state instead; Streamlit applies it when
+    # the widget is created further down.
+    if advisor_voice_input:
+        st.session_state["advisor_preference"] = advisor_voice_input
+    elif "advisor_preference" not in st.session_state:
+        st.session_state["advisor_preference"] = DEFAULT_ADVISOR_PREFERENCE
 
     with st.form("advisor_input_form"):
         col_a, col_b, col_c = st.columns([3, 1, 1])
@@ -172,7 +212,7 @@ else:
             remain_credit = st.number_input("Remaining Credit", min_value=0, max_value=40, value=12)
         with col_c:
             semester_label = st.selectbox("Planned Semester", ["Any", "S1", "S2"])
-        preference = st.text_area("Your Study Preference", value=advisor_default_preference)
+        preference = st.text_area("Your Study Preference", key="advisor_preference")
         submitted = st.form_submit_button("✨ Generate Course Recommendation")
     if submitted:
         finished_list = [c.strip() for c in finished_str.split(",") if c.strip()]
@@ -185,8 +225,16 @@ Preference: {preference}"""
         with st.chat_message("user"):
             st.markdown(user_msg)
         # Call backend B rule‑engine + advisor pipeline
-        advisor_result = academic_advisor_recommend(finished_list, remain_credit, preference,
-                                                 semester=None if semester_label == "Any" else semester_label)
+        try:
+            with st.spinner("Checking prerequisites, credits and preferences…"):
+                advisor_result = academic_advisor_recommend(
+                    finished_list, remain_credit, preference,
+                    semester=None if semester_label == "Any" else semester_label)
+        except Exception as exc:  # never show a raw traceback during the demo
+            advisor_result = {
+                "answer": f"Sorry, the advisor could not run ({type(exc).__name__}). Please try again.",
+                "source_files": [],
+            }
         bot_ans = advisor_result["answer"]
         src_list = advisor_result["source_files"]
         st.session_state.chat_history.append({"role":"assistant", "content":bot_ans, "sources":src_list})
@@ -204,12 +252,3 @@ with st.expander("ℹ️ Project Info & Limitation (for demo reference)"):
 - Limitation: Only for single‑major COMP undergraduate. Double‑major / exchange student cases are out‑of‑scope.
 - All suggestion is for reference only, please check official university documents.
 """)
-    _st = backend_status()
-    st.caption(
-        f"🔌 Backend A · course lookup (rag_backend.py): **{_st['rag']}**"
-        + (f" — {_st['rag_error']}" if _st["rag_error"] else "")
-        + f" | Backend B · advisor (advisor.py): **{_st['advisor']}**"
-        + (f" — {_st['advisor_error']}" if _st["advisor_error"] else "")
-        + f" | courses.json: {_st['catalog_rows']} courses"
-        + f" | syllabus snippets: {'on' if _st['rag_snippets'] else 'off'}"
-    )

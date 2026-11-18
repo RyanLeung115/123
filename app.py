@@ -33,55 +33,16 @@ if "current_mode" not in st.session_state:
     # Two modes: "course_lookup" (basic feature), "advisor" (additional feature)
     st.session_state.current_mode = "course_lookup"
 
-# ===================== Mock Backend Interface =====================
-# ---------------- Backend A (RAG pipeline, implement by member A) ----------------
-def rag_course_query(user_query: str) -> dict:
-    """
-    Basic Feature: Course syllabus lookup via RAG
-    Input: user natural language query e.g. "Tell me about COMP4431"
-    Return dict:
-    {
-        "answer": str,
-        "source_files": list[str]  # e.g ["COMP4431_Syllabus_2026.pdf"]
-    }
-    """
-    # ========= MOCK DEMO DATA — replace with real RAG API call =========
-    if "COMP4431" in user_query:
-        return {
-            "answer": """**COMP4431 Artificial Intelligence**
-- Credits: 3
-- Prerequisite: COMP2411
-- Course Description: Fundamentals of artificial intelligence, search algorithms, knowledge representation, LLM introduction, group project development.
-- Assessment: Group Project 10%, Midterm 40%, Final Exam 50%
-- Core Topics: LLM, Chatbot development, RAG system, AI agent""",
-            "source_files": ["COMP4431_Syllabus_2026‑27.pdf"]
-        }
-    return {
-        "answer": "No matching course syllabus found in knowledge base.",
-        "source_files": []
-    }
-
-# ---------------- Backend B (Rule Engine + Advisor Module, member B) ----------------
-# Real implementation lives in advisor.py (+ rule_engine.py + courses.json): keep them in the same folder.
-from advisor import academic_advisor_recommend as _advisor
-
-USE_RAG_SNIPPETS = False  # set True once member A's real rag_course_query() is connected
-
-def academic_advisor_recommend(
-    finished_courses: list[str],
-    remaining_credit: int,
-    preference_text: str,
-    semester=None
-) -> dict:
-    """
-    Additional Feature: Academic Advisor hybrid pipeline
-    Rule Engine (prerequisite / semester / credit / preference) -> optional RAG -> LLM wording
-    (falls back to a template answer if the local LLM is unavailable or breaks the rules)
-    Return dict: {"answer": str, "source_files": list[str]}
-    """
-    return _advisor(finished_courses, remaining_credit, preference_text,
-                    semester=semester,
-                    rag_fn=rag_course_query if USE_RAG_SNIPPETS else None)
+# ===================== Backend Connection =====================
+# All backend glue (imports, wiring, guards, fallbacks) lives in backend_bridge.py:
+#   Backend A  rag_backend.py                                  -> rag_course_query()        (basic feature)
+#   Backend B  advisor.py + rule_engine.py + courses.json      -> academic_advisor_recommend() (additional)
+# The UI below only calls these two functions, never the backend modules directly.
+from backend_bridge import (
+    academic_advisor_recommend,
+    backend_status,
+    rag_course_query,
+)
 
 
 def render_speech_output(text: str, instance_id: str) -> None:
@@ -171,15 +132,20 @@ if st.session_state.current_mode == "course_lookup":
         st.session_state.chat_history.append({"role":"user", "content":user_input})
         with st.chat_message("user"):
             st.markdown(user_input)
-        # Call backend RAG
-        result = rag_course_query(user_input)
+        # Call backend A (RAG) through the connection layer
+        with st.spinner("Searching the course knowledge base…"):
+            result = rag_course_query(user_input)
         bot_ans = result["answer"]
         src_list = result["source_files"]
+        engine = result.get("engine", "")
         st.session_state.chat_history.append({"role":"assistant", "content":bot_ans, "sources":src_list})
         with st.chat_message("assistant", avatar=BOT_AVATAR_SVG):
             render_speech_output(bot_ans, "latest-course-answer")
             st.markdown(bot_ans)
-            st.caption(f"📎 Source reference: {', '.join(src_list)}")
+            if src_list:
+                st.caption(f"📎 Source reference: {', '.join(src_list)}")
+            if engine == "courses.json":
+                st.caption("⚙️ No syllabus PDF matched — this answer comes from courses.json.")
 
 else:
     # Academic Advisor Mode input panel
@@ -227,7 +193,8 @@ Preference: {preference}"""
         with st.chat_message("assistant", avatar=BOT_AVATAR_SVG):
             render_speech_output(bot_ans, "latest-advisor-answer")
             st.markdown(bot_ans)
-            st.caption(f"📎 Source reference: {', '.join(src_list)}")
+            if src_list:
+                st.caption(f"📎 Source reference: {', '.join(src_list)}")
 
 st.divider()
 with st.expander("ℹ️ Project Info & Limitation (for demo reference)"):
@@ -237,3 +204,12 @@ with st.expander("ℹ️ Project Info & Limitation (for demo reference)"):
 - Limitation: Only for single‑major COMP undergraduate. Double‑major / exchange student cases are out‑of‑scope.
 - All suggestion is for reference only, please check official university documents.
 """)
+    _st = backend_status()
+    st.caption(
+        f"🔌 Backend A · course lookup (rag_backend.py): **{_st['rag']}**"
+        + (f" — {_st['rag_error']}" if _st["rag_error"] else "")
+        + f" | Backend B · advisor (advisor.py): **{_st['advisor']}**"
+        + (f" — {_st['advisor_error']}" if _st["advisor_error"] else "")
+        + f" | courses.json: {_st['catalog_rows']} courses"
+        + f" | syllabus snippets: {'on' if _st['rag_snippets'] else 'off'}"
+    )

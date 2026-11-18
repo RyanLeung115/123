@@ -1,0 +1,7 @@
+streamlit
+streamlit-mic-recorder
+
+# Basic-feature RAG backend (rag_backend.py). Python 3.10-3.12 recommended (torch wheels).
+chromadb>=1.0
+sentence-transformers>=3.0
+pypdf>=4.0

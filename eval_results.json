@@ -1,0 +1,262 @@
+{
+  "data_checks": [
+    {
+      "name": "course codes are unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "assessment percentages sum to 100",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "prerequisites are non-empty groups",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "elective_status has a valid value",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "coding_load is low/medium/high",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "offered_2026_27 is null or {S1,S2}",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "name": "39 electives recorded (from the programme elective list)",
+      "passed": true,
+      "detail": "found 39"
+    }
+  ],
+  "unit_tests": [
+    {
+      "name": "prereq AND/OR: (X or Y) and Z satisfied",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prereq AND/OR: missing group Z blocks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing group is explained",
+      "passed": true,
+      "detail": "missing prerequisite: X/Y"
+    },
+    {
+      "name": "exclusion blocks the course",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "exclusion does not block when not completed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "equivalent code D9 satisfies prerequisite P9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "equivalent code D9 counts as completed P9",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "training credits are never recommended",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "credit cap respected (cap 6 -> at most 6)",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "semester filter drops S1-only course in S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "course offered in neither semester is dropped",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "unknown offering (None) is kept with a flag",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "candidate_codes(): codes only, credit cap respected",
+      "passed": true,
+      "detail": "['P9', 'S1ONLY']"
+    },
+    {
+      "name": "completed code missing from the metadata: warned, not fatal",
+      "passed": true,
+      "detail": "[\"Unknown course code 'ZZZZ9999' (not in the dataset); used as-is for prerequisite checks.\", 'No semester given: a subject offered in only one semester may not be available in yours.']"
+    }
+  ],
+  "profile_tests": [
+    {
+      "name": "P1 AI student, avoids heavy coding, S2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P2 teammate's original sample (only COMP2411, COMP2421): AI courses are blocked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P3 S1 planning, no preference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P4 completed DSAI4203 (= COMP4432): not recommended again",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P5 credit cap: only 3 credits left -> exactly one course",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P6 S2 planning, no preference",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P7 first-year student (nothing completed): only subjects without prerequisites",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 System track, completed OS and networking, S1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "P9 DSAI2201 completed instead of COMP2011 (equivalent), AI, S1",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "advisor_tests": [
+    {
+      "name": "parse: AI + avoid heavy coding",
+      "passed": true,
+      "detail": "{'categories': ['AI'], 'avoid_heavy_coding': True, 'semester': None}"
+    },
+    {
+      "name": "parse: security + cloud, S2, avoid programming",
+      "passed": true,
+      "detail": "{'categories': ['Security', 'System'], 'avoid_heavy_coding': True, 'semester': 'S2'}"
+    },
+    {
+      "name": "parse: data + ML, S1, no coding wish",
+      "passed": true,
+      "detail": "{'categories': ['AI', 'Data'], 'avoid_heavy_coding': False, 'semester': 'S1'}"
+    },
+    {
+      "name": "parse: no preference",
+      "passed": true,
+      "detail": "{'categories': [], 'avoid_heavy_coding': False, 'semester': None}"
+    },
+    {
+      "name": "parse finished courses: spaces, case, duplicates",
+      "passed": true,
+      "detail": "['COMP2411', 'COMP2421']"
+    },
+    {
+      "name": "template answer: demo student gets COMP4423 + COMP4436",
+      "passed": true,
+      "detail": "['COMP4423', 'COMP4436']"
+    },
+    {
+      "name": "template answer: disclaimer first, 2 source links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "template answer: heavy-coding COMP4431 is left out, with reason",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "template answer: unrelated areas are not listed as 'left out'",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "guardrail: LLM invents a course -> fallback to template",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "guardrail: LLM forgets a picked course -> fallback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "guardrail: valid LLM answer is accepted and gets the credit footer",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "guardrail: prerequisite alternatives from the form are allowed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "LLM unreachable -> template answer, no crash",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "nothing eligible: clear message and the LLM is not called",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "llm_tests": [
+    {
+      "name": "model: auto-picks the first installed fallback",
+      "passed": true,
+      "detail": "qwen3.5:4b"
+    },
+    {
+      "name": "model: an explicit OLLAMA_MODEL always wins",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "request: ask the model not to think (qwen3.x) and cap the length",
+      "passed": true,
+      "detail": "{'model': 'mine:7b', 'prompt': 'hi', 'stream': False, 'options': {'temperature': 0.2, 'num_predict': 300}, 'think': False}"
+    },
+    {
+      "name": "request: HTTP 400 on 'think' -> retry without it",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "empty LLM answer -> template answer, demo still works",
+      "passed": true,
+      "detail": "['COMP4423', 'COMP4436']"
+    }
+  ]
+}

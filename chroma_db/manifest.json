@@ -1,0 +1,20 @@
+{
+  "fingerprint": "caef5466f684426a130eb5e8d9301c6fffdaf4c5f19a06ea187b1c267bd5322a",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunk_size": 900,
+  "chunk_overlap": 150,
+  "files": [
+    "COMP1011.pdf",
+    "COMP2011.pdf",
+    "COMP2411.pdf",
+    "COMP2421.pdf",
+    "COMP4423.pdf",
+    "COMP4431.pdf",
+    "COMP4432.pdf",
+    "COMP4433.pdf",
+    "COMP4434.pdf",
+    "COMP4436.pdf"
+  ],
+  "chunks": 70,
+  "built_at": "2026-11-18 15:28:57"
+}

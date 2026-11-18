@@ -1,0 +1,2577 @@
+[
+  {
+    "course_code": "COMP4431",
+    "title": "Artificial Intelligence",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "AI",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "project, lab exercises, quizzes (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": true
+    },
+    "summary": "Intelligent agents, search, knowledge representation, Bayesian networks, machine learning basics, AI ethics.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4431.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4423",
+    "title": "Computer Vision",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012 or ENG2002 (Computer Programming) for EEE students",
+    "exclusion": "",
+    "category": "AI",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 10%, project 20%"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": true
+    },
+    "summary": "Image processing, feature extraction, object detection, segmentation using classical ML and deep learning.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4423.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4436",
+    "title": "Artificial Intelligence of Things",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "AI",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 10%, quizzes 10%, project 10%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "IoT sensing, networking and analytics, AIoT architectures, edge intelligence and robotics.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4436.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4442",
+    "title": "Service and Cloud Computing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2421"
+      ],
+      [
+        "COMP2432"
+      ]
+    ],
+    "prerequisite_text": "COMP2421 Computer Organization & COMP2432 Operating Systems, or equivalent subjects",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessments (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Cloud architecture, virtualisation, AWS platforms, cloud application development, management and security.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4442.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4342",
+    "title": "Mobile Computing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2411"
+      ],
+      [
+        "COMP2432",
+        "COMP1411"
+      ]
+    ],
+    "prerequisite_text": "COMP2411 and COMP2432/COMP1411",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, lab exercises, project (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Wireless networks, mobile ad hoc networks, mobility management, location-based services, mobile security.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4342.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4422",
+    "title": "Computer Graphics",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments; project/lab exercises (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Graphics pipeline, GPUs, 2D/3D modelling, transformations, projection, shading and rendering.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4422.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4133",
+    "title": "Information Retrieval",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ],
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201 & COMP2411",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, lab exercises, project (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Retrieval models, indexing, query processing, text clustering, web retrieval and link analysis.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4133.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4122",
+    "title": "Game Design and Development",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Nil",
+    "category": "Application",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "project 45%, mid-term programming exam 10%"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Game design principles, rendering, collision detection, game AI, Unity/Unreal tools.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4122.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3011",
+    "title": "Design and Analysis of Algorithms",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201",
+        "EIE3320"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201/EIE3320 or equivalent",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 30%, mid-term/tests included (no split)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Asymptotic analysis, dynamic programming, divide-and-conquer, greedy, NP-completeness.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3011.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3211",
+    "title": "Software Engineering",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 30%, group project (no separate weighting stated)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Software processes, agile, requirements, modelling, architecture, testing; group project.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3211.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3334",
+    "title": "Computer Systems Security",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none); basic understanding of modern operating systems is preferred",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, quizzes, project (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Cryptography, authentication, software exploits, web security, blockchain and zero-knowledge proofs.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3334.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3335",
+    "title": "Database Security",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "COMP2411 or equivalent introductory database subject",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, project, test (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Database technologies and architectures, access control, inference control, SQL injection.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3335.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3421",
+    "title": "Web Application Design and Development",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, tests, projects (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "HTTP, HTML5/CSS3, JavaScript/TypeScript, back-end frameworks, SPAs, cloud deployment, AI-enhanced web apps.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3421.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3423",
+    "title": "Human Computer Interaction",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "COMP2222",
+    "category": "Application",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and/or project (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Human perception and information processing, ergonomics, input/output devices, interface evaluation.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3423.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3438",
+    "title": "System Programming",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2432"
+      ]
+    ],
+    "prerequisite_text": "COMP2432, C Programming",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 30%"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "UNIX files and processes, device drivers, compiler construction. NOTE: also needs C programming (not a course code).",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3438.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4011",
+    "title": "Theory of Computation",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP3011"
+      ]
+    ],
+    "prerequisite_text": "COMP3011",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 30%, mid-term/tests included (no split)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Automata, context-free languages, Turing machines, decidability, P and NP, quantum computing.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4011.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4322",
+    "title": "Internetworking Protocols, Software and Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2322"
+      ]
+    ],
+    "prerequisite_text": "COMP2322",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "individual assignments, quizzes, group projects (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "IP addressing, TCP/UDP, routing, SNMP, multicast, VPN/IPSec/NAT.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4322.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4334",
+    "title": "Principles and Practice of Internet Security",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP3334"
+      ]
+    ],
+    "prerequisite_text": "COMP3334",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 10%, midterm 10%, project 10%"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Attack types, cryptography, protocol weaknesses (IP, DNS), DoS, firewalls, intrusion detection.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4334.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3311",
+    "title": "Applied Cryptography",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2012"
+      ]
+    ],
+    "prerequisite_text": "COMP2012 Discrete Mathematics",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "midterm 15%, project 15%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Secret-key and public-key cryptography, digital signatures, key management, authentication protocols.",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3311.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3424",
+    "title": "Digital Twins: Simulation and Case Studies",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ],
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002 & COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and/or project (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Digital twins, discrete event simulation, applications in manufacturing/logistics/smart cities.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3424.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2411",
+    "title": "Database Systems",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, tests, projects (no split given)"
+    },
+    "offered_2026_27": null,
+    "summary": "Database design, relational model and SQL, indexing, query processing, transactions.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2411.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2421",
+    "title": "Computer Organization",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "quiz and programming assignments 20%, mid-term 10%"
+    },
+    "offered_2026_27": null,
+    "summary": "Number systems, logic circuits, CPU design, assembly programming, memory and I/O.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2421.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2432",
+    "title": "Operating Systems",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "Prerequisites: COMP2011/COMP2013/DSAI2201 (listed separately from the blank Pre-requisite field)",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": null,
+    "summary": "OS services, Unix/Linux, process management, synchronisation, memory, file systems.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2432.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2322",
+    "title": "Computer Networking",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments 30%; project (no separate weighting stated)"
+    },
+    "offered_2026_27": null,
+    "summary": "Link layer and above, TCP/IP, ATM as examples.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2322.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2011",
+    "title": "Data Structures",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "COMP2013, DSAI2201",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, project, quizzes (no split given)"
+    },
+    "offered_2026_27": null,
+    "summary": "Linear and tree structures, heaps, sorting and searching.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2011.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2013",
+    "title": "Data Structures and Algorithms",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002",
+        "LGT3109"
+      ],
+      [
+        "AMA1110",
+        "AMA1501",
+        "AMA2634"
+      ],
+      [
+        "AMA1751",
+        "AMA2111",
+        "AMA2131",
+        "AMA2512"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002/LGT3109 & AMA1110/AMA1501/AMA2634 & AMA1751/AMA2111/AMA2131/AMA2512",
+    "exclusion": "",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 40,
+      "continuous_pct": 60,
+      "continuous_detail": "written assignments 15%, programming assignments 20%, quizzes 25%"
+    },
+    "offered_2026_27": null,
+    "summary": "Algorithm efficiency, linear/tree structures, sorting, hashing, graphs. NOTE: older form (Jan 2024), different weighting from other forms.",
+    "form_date": "Jan 2024",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2013.pdf",
+    "note": "",
+    "equivalent_codes": [
+      "DSAI2201"
+    ]
+  },
+  {
+    "course_code": "COMP2012",
+    "title": "Discrete Mathematics",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and quizzes (no split given)"
+    },
+    "offered_2026_27": null,
+    "summary": "Sets, logic, induction, counting, graphs and trees, Boolean algebra.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2012.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1001",
+    "title": "Problem Solving Methodology in Information Technology",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, quizzes, mini-projects"
+    },
+    "offered_2026_27": null,
+    "summary": "Python-based problem solving for students without programming background.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1001.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1002",
+    "title": "Computational Thinking and Problem Solving",
+    "credit": 4,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Nil",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "quizzes, assignments, labs, in-class work"
+    },
+    "offered_2026_27": null,
+    "summary": "Python, computational modelling and program design.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1002.pdf",
+    "note": "Page note: applicable to students admitted in or before 2024/25.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1003",
+    "title": "Statistical Tools and Applications",
+    "credit": 1,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "Nil",
+    "category": "Data",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "lab work, homework, quizzes, mid-term test"
+    },
+    "offered_2026_27": null,
+    "summary": "Excel and SPSS for graphing, Monte Carlo simulation and regression.",
+    "form_date": "Aug 2010",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1003.pdf",
+    "note": "Old form (2010).",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1004",
+    "title": "Introduction to Artificial Intelligence and Data Analytics",
+    "credit": 2,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "Nil",
+    "category": "AI",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "exercises/e-learning/assignments/project 40%, quizzes 60%"
+    },
+    "offered_2026_27": null,
+    "summary": "Big data, machine learning and generative AI concepts, ethics.",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1004.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1010",
+    "title": "Computational Thinking and Problem Solving",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Nil",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": null,
+    "summary": "Python, computational modelling and program design.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1010.pdf",
+    "note": "Page note: applicable to students admitted in or after 2025/26.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1011",
+    "title": "Programming Fundamentals",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "COMP1012, ENG2002",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, quizzes, individual projects"
+    },
+    "offered_2026_27": null,
+    "summary": "Programming constructs, flow control, lists/sets/strings, debugging.",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1011.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1012",
+    "title": "Programming Fundamentals and Applications",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "COMP1011/ENG2002",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "quizzes and project(s) (no clear split)"
+    },
+    "offered_2026_27": null,
+    "summary": "Python programming, data structures, file handling, brief R.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1012.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1411",
+    "title": "Introduction to Computer Systems",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Nil",
+    "category": "System",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "class exercises/assignments 25%, quizzes/tests 30%"
+    },
+    "offered_2026_27": null,
+    "summary": "Computer system structure; embedded, distributed, cloud and IoT systems.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1411.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1433",
+    "title": "Introduction to Data Analytics",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "Nil",
+    "category": "Data",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, test, quizzes"
+    },
+    "offered_2026_27": null,
+    "summary": "Data analytics basics, statistics, linear algebra and calculus using R.",
+    "form_date": "Aug 2019",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1433.pdf",
+    "note": "Old form (2019).",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1901",
+    "title": "Seminars and Topics in Information Technology",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "Nil",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "seminars 10%, projects 90%"
+    },
+    "offered_2026_27": null,
+    "summary": "Guest seminars and three project-based assignments.",
+    "form_date": "Aug 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1901.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1BN02",
+    "title": "Friends, Followers and Circles: Connections in a Socially-Computed World",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "COMP1901",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "attendance/blog 20%, project 30%, term paper 25%, quizzes 25%"
+    },
+    "offered_2026_27": null,
+    "summary": "Social networks and social computing for non-Computing students.",
+    "form_date": "Mar 2022",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1BN02.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1BN03",
+    "title": "Innovation and Entrepreneurship: The Rise of the ICT Industry in China",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "exercises/assignments 30%, group project 30%, tests 40%"
+    },
+    "offered_2026_27": null,
+    "summary": "Entrepreneurial process using China's ICT sector as case study.",
+    "form_date": "Mar 2022",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1BN03.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP1D04",
+    "title": "From Scratch to Apps: Foundations of Computational Thinking and Literacy for Problem Solving",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 1,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "COMP1901, COMP1011",
+    "category": "Foundation",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "assignments 50%, tests/quizzes 50%"
+    },
+    "offered_2026_27": null,
+    "summary": "Computational thinking from Scratch to Python/PHP for non-Computing students.",
+    "form_date": "Jul 2015",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP1D04.pdf",
+    "note": "Old form (2015).",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2014",
+    "title": "Mathematics for Machine Learning",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "AMA1007",
+        "AMA1110",
+        "AMA1120",
+        "AMA1702"
+      ]
+    ],
+    "prerequisite_text": "AMA1007/AMA1110/AMA1120/AMA1702 or equivalent",
+    "exclusion": "",
+    "category": "AI",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and quizzes"
+    },
+    "offered_2026_27": null,
+    "summary": "Linear algebra, probability, optimisation, numerical libraries for ML.",
+    "form_date": "Jun 2026",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2014.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2021",
+    "title": "Object-oriented Programming",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "Foundation",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and project"
+    },
+    "offered_2026_27": null,
+    "summary": "Encapsulation, inheritance, polymorphism, generics, concurrency, UML (C++ or Java).",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2021.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2022",
+    "title": "Programming for FinTech Applications",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [],
+    "prerequisite_text": "Any programming related subject, e.g., COMP1001 or relevant IT background",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "lab exercises 55% (project/quizzes listed, no split)"
+    },
+    "offered_2026_27": null,
+    "summary": "Excel, MATLAB and R for FinTech data processing and simulation.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2022.pdf",
+    "note": "Prerequisite is a vague text, not a course code.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP2121",
+    "title": "E-Business",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 2,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments/tutor exercises, mid-term quizzes"
+    },
+    "offered_2026_27": null,
+    "summary": "E-business technologies, systems and building e-business sites.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP2121.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3021",
+    "title": "Programming Language Paradigms",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2011"
+      ]
+    ],
+    "prerequisite_text": "COMP2011 Data Structures or equivalent",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 55% (labs/project/mid-term listed, no split)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Language paradigms, scoping, concurrency, functional and logic languages.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3021.pdf",
+    "note": "Form does not state the level; the subjects page lists it at Level 3.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3022",
+    "title": "Algorithms Engineering",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ],
+      [
+        "COMP2421"
+      ],
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ],
+      [
+        "COMP3011"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002 & COMP2421 & COMP2011/COMP2013/DSAI2201 & COMP3011",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, project, quizzes"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Building and benchmarking efficient algorithms for practical problems.",
+    "form_date": "Jun 2026",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3022.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3121",
+    "title": "Social and Collaborative Computing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Social computing technologies, user behaviour, social network modelling.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3121.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3122",
+    "title": "Information Systems Development",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "COMP2411",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "exercises, assignments, tests, projects"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Enterprise IS architecture, development practices, deployment, agile.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3122.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3131",
+    "title": "Business and Information Systems Strategies",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Business",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Strategic planning and use of information systems.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3131.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3133",
+    "title": "Chinese Language Processing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "AI",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, labs, project/presentation 55%; MID-TERM exam 45%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Chinese text representation, NLP fundamentals, machine translation, retrieval.",
+    "form_date": "Dec 2023",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3133.pdf",
+    "note": "Written exam is a mid-term exam (45%).",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3134",
+    "title": "Business Intelligence and Customer Relationship Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, tests and/or project"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "BI tools, CRM strategy, customer behaviour analysis.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3134.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3233",
+    "title": "Software Testing and Quality Assurance",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP3211"
+      ]
+    ],
+    "prerequisite_text": "COMP3211",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 55% (project listed, unclear if included); MID-TERM exam 45%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Testing techniques, QA, inspection, test tools, quality measurement.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3233.pdf",
+    "note": "Written exam is a mid-term exam (45%).",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3235",
+    "title": "Software Project Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Business",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "project, quizzes"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Software project lifecycle: planning, cost, quality, risk.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3235.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3422",
+    "title": "Creative Digital Media Design",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Multimedia computing, compression, human perception, multimedia system design.",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3422.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3511",
+    "title": "Legal Aspects and Ethics of Computing",
+    "credit": 2,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Professional",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "assignments, tests, projects, presentations (no exam)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Ethics, law, AI ethics, privacy, IP, professional conduct.",
+    "form_date": "Nov 2024",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3511.pdf",
+    "note": "2 credits.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3512",
+    "title": "Legal Aspects, Professionalism and Ethics of Computing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Professional",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "assignments, tests, projects, presentations (no exam)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Ethics, GDPR, computer crime, IP, professional codes of conduct.",
+    "form_date": "Jun 2024",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3512.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3531",
+    "title": "IT Entrepreneurship",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Business",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and/or project"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Launching an IT business: planning, marketing, IP, financing.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3531.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3911",
+    "title": "Service Learning and Civic Engagement in the Information Age",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011 or ENG2002",
+    "exclusion": "",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "service plans 20%, service performance 40%, reflective journal 30%, attitude 10%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Service-learning: build IT solutions for communities/NGOs. Also coded COMP3S03.",
+    "form_date": "Jan 2022",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3911.pdf",
+    "note": "Service-learning requirement subject; check with programme whether it counts as an elective.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3924",
+    "title": "FinTech Seminars and Case Studies",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "COMP3921-23",
+    "category": "FinTech",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "assignments (e.g., essays); project and quizzes listed"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Invited speakers on blockchain, mobile payment, crowdfunding, cybersecurity.",
+    "form_date": "Dec 2020",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3924.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP3S02",
+    "title": "Socially Responsible Global Leadership in a Digital World",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": true,
+    "level": 3,
+    "prerequisite": [],
+    "prerequisite_text": "Nil",
+    "exclusion": "",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "attitude 15%, preparation/deliverables 15%, service performance 40%, reflective journal 30%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Service-learning, leadership and cross-cultural project.",
+    "form_date": "Jan 2024",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP3S02.pdf",
+    "note": "Service-learning requirement subject; check with programme whether it counts as an elective.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4001",
+    "title": "Internship",
+    "credit": 12,
+    "credit_type": "training",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": true,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "COMP4000",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "pass/fail from supervisor evaluation and report"
+    },
+    "offered_2026_27": null,
+    "summary": "Supervised work experience in a company.",
+    "form_date": "(not stated)",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4001.pdf",
+    "note": "12 TRAINING credits (not normal credits). Not a lecture elective.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4002",
+    "title": "Experiential Learning",
+    "credit": 12,
+    "credit_type": "training",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": true,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "COMP4000, COMP4001",
+    "category": "Other",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "pass/fail from report/certificates"
+    },
+    "offered_2026_27": null,
+    "summary": "Supervised workplace and non-local learning experience.",
+    "form_date": "Aug 2026",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4002.pdf",
+    "note": "12 TRAINING credits (not normal credits). Not a lecture elective.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4121",
+    "title": "E-Commerce Technology and Applications",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "COMP2411 or a related subject; knowledge of web development (e.g. COMP3421) preferred",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, group project, quizzes"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "E-commerce infrastructure, web security, payment systems.",
+    "form_date": "Aug 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4121.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4123",
+    "title": "Business Process and Workflow Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Business",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "group project (report and presentation)"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Business process analysis, BPMN modelling, workflow systems.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4123.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4125",
+    "title": "Operations Research and Logistics Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ],
+      [
+        "COMP2011",
+        "COMP2013",
+        "DSAI2201"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002 & COMP2011/COMP2013/DSAI2201",
+    "exclusion": "",
+    "category": "Theory",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments and/or project"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Transportation, inventory, network flow, forecasting, e-logistics.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4125.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4127",
+    "title": "Information Systems Audit and Control",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignments, tests and/or project"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "IS audit, controls, risk management, business continuity.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4127.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4134",
+    "title": "Biometrics and Security",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "AMA1104"
+      ],
+      [
+        "COMP3422"
+      ]
+    ],
+    "prerequisite_text": "AMA1104 Introductory Probability or HKDSE Maths Extended Module or equivalent; and COMP3422 or equivalent",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 40,
+      "continuous_pct": 60,
+      "continuous_detail": "assignments, labs, project, mid-term"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Information security, encryption, watermarking, biometric technologies.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4134.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4135",
+    "title": "Knowledge and Information Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "continuous assessment (no split given)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Knowledge representation and knowledge-based decision-support systems.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4135.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4136",
+    "title": "Data Protection and Security",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 10%, labs 10%, project 10%, mid-term 25%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Data security, digital signatures, watermarking, privacy law, biometrics.",
+    "form_date": "Dec 2023",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4136.pdf",
+    "note": "",
+    "equivalent_codes": [
+      "DSAI4201"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4201 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4141",
+    "title": "Crowdfunding and E-Finance",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "Basic concepts of finance and computing",
+    "exclusion": "",
+    "category": "FinTech",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 55% (project/quizzes listed, no split)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Crowdfunding models, P2P lending, algorithmic e-trading, digital banking.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4141.pdf",
+    "note": "Prerequisite is a vague text, not a course code.",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4142",
+    "title": "E-Payment and Cryptocurrency",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP3334"
+      ]
+    ],
+    "prerequisite_text": "Pre-requisite field '/', but the objectives section states COMP3334",
+    "exclusion": "",
+    "category": "FinTech",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, project, mid-term test"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Payment systems, blockchain, Bitcoin and cryptocurrencies.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4142.pdf",
+    "note": "Form is inconsistent about the prerequisite; COMP3334 assumed.",
+    "equivalent_codes": [
+      "DSAI4202"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4202 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4146",
+    "title": "Computational Finance",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Nil",
+    "category": "FinTech",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "project 55% (mid-term/quizzes listed, no split)"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Financial models, portfolio optimisation, options pricing.",
+    "form_date": "Dec 2020",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4146.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4332",
+    "title": "Mobile Security: Principles and Practice",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ],
+      [
+        "COMP2322"
+      ],
+      [
+        "COMP2432",
+        "COMP1411"
+      ],
+      [
+        "COMP3334"
+      ]
+    ],
+    "prerequisite_text": "COMP1011/COMP1012/ENG2002 & COMP2322 & COMP2432/COMP1411 & COMP3334",
+    "exclusion": "",
+    "category": "Security",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 25%, term project 30%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Cellular/WiFi security, Android and iOS security, mobile malware analysis.",
+    "form_date": "Dec 2023",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4332.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4424",
+    "title": "Extended Reality: Theory and Practice",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2222",
+        "COMP3423"
+      ]
+    ],
+    "prerequisite_text": "COMP2222 or COMP3423; basic Unity knowledge preferred",
+    "exclusion": "",
+    "category": "Application",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "group project"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "XR theory: human perception, presence, applications and evaluation.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4424.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4432",
+    "title": "Machine Learning",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none); exposure to intro AI/data analytics and basic linear algebra/probability preferred",
+    "exclusion": "Nil",
+    "category": "AI",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, tests/quizzes, project"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": true
+    },
+    "summary": "Core ML principles and models applied to pattern recognition and vision.",
+    "form_date": "Jul 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4432.pdf",
+    "note": "",
+    "equivalent_codes": [
+      "DSAI4203"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4203 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4433",
+    "title": "Data Mining and Data Warehousing",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "COMP2411 or equivalent introductory database subject",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "medium",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignment and project"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Data warehouses, association rules, classification, clustering.",
+    "form_date": "Jul 2022",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4433.pdf",
+    "note": "The form itself says Level 3; the subjects page lists it at Level 4.",
+    "equivalent_codes": [
+      "DSAI4204"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4204 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4434",
+    "title": "Big Data Analytics",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "elective",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "AMA1104",
+        "COMP1004"
+      ],
+      [
+        "COMP1011",
+        "COMP1012",
+        "ENG2002"
+      ],
+      [
+        "COMP2011",
+        "COMP2013"
+      ],
+      [
+        "COMP2411"
+      ]
+    ],
+    "prerequisite_text": "AMA1104 or COMP1004, COMP1011/COMP1012/ENG2002, COMP2011/COMP2013, and COMP2411 or equivalent",
+    "exclusion": "",
+    "category": "Data",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 40,
+      "continuous_pct": 60,
+      "continuous_detail": "labs/assignments, project, quizzes"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": true
+    },
+    "summary": "NoSQL, Hadoop/MapReduce, ML, graph analytics, recommenders, visualisation.",
+    "form_date": "Jul 2022",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4434.pdf",
+    "note": "",
+    "equivalent_codes": [
+      "DSAI4205"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4205 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4438",
+    "title": "Embedded Software",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [
+      [
+        "COMP3438"
+      ]
+    ],
+    "prerequisite_text": "COMP3438",
+    "exclusion": "",
+    "category": "System",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments 35%, mid-term test 20%"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": false
+    },
+    "summary": "Embedded system architecture, RTOS, cross-platform development, verification.",
+    "form_date": "Jun 2021",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4438.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4512",
+    "title": "Intellectual Property Protection and Management",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "Professional",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 70,
+      "continuous_pct": 30,
+      "continuous_detail": "assignment and/or project"
+    },
+    "offered_2026_27": {
+      "S1": true,
+      "S2": false
+    },
+    "summary": "Managing and protecting IP with a technical focus; DRM techniques.",
+    "form_date": "Jul 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4512.pdf",
+    "note": "",
+    "equivalent_codes": []
+  },
+  {
+    "course_code": "COMP4531",
+    "title": "Emerging Topics in FinTech",
+    "credit": 3,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": false,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "",
+    "category": "FinTech",
+    "coding_load": "low",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 45,
+      "continuous_pct": 55,
+      "continuous_detail": "assignments, project, quiz"
+    },
+    "offered_2026_27": {
+      "S1": false,
+      "S2": true
+    },
+    "summary": "Recent FinTech developments: crowdfunding, e-trading, P2P lending.",
+    "form_date": "Dec 2020",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4531.pdf",
+    "note": "",
+    "equivalent_codes": [
+      "DSAI4206"
+    ],
+    "offered_note": "Offered under the DSAI code DSAI4206 (from the DSAI 'subjects on offer' page; that page's academic year was not visible to me - verify)"
+  },
+  {
+    "course_code": "COMP4913",
+    "title": "Capstone Project",
+    "credit": 6,
+    "credit_type": "credit",
+    "elective_status": "not_in_elective_list",
+    "non_elective_candidate": true,
+    "level": 4,
+    "prerequisite": [],
+    "prerequisite_text": "/ (none)",
+    "exclusion": "Any other equivalent capstone project",
+    "category": "Other",
+    "coding_load": "high",
+    "coding_load_basis": "provisional team judgement from synopsis; verify with lecturer/outline",
+    "assessment": {
+      "exam_pct": 0,
+      "continuous_pct": 100,
+      "continuous_detail": "continuous assessment 100%"
+    },
+    "offered_2026_27": null,
+    "summary": "Supervised in-depth project with proposal, reports and final demo.",
+    "form_date": "Jun 2025",
+    "source": "https://www.polyu.edu.hk/comp/docdrive/ug/subject/COMP4913.pdf",
+    "note": "Programme project subject, not a regular elective.",
+    "equivalent_codes": []
+  }
+]
